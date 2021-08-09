@@ -2,17 +2,19 @@ def final_value(movements = []):
   # Your solution
   noMoves = 0
 
-  while noMoves <= 9:
+  while noMoves <= 1:
 
     data = input("write the movements: \n ")
 
     movements.append(data)
     noMoves += 1
 
-  print("Ready!", safe(movements))
+  print("The position is: ", safe(movements))
 
 
 def safe(movements):
+
+# Debería llegar de 0-99 (total 10 números)
 
   position = 0
 
@@ -21,32 +23,39 @@ def safe(movements):
     element = int(element)
 
     position += element
+    # print(position)
+
+
+  result(position)
+
+
+  # return result
+
+def result(position):
+
+
+  # while position > 99:
+  #   result = position - 99
+  #   print(result, position)
+
+      
+  # if (position >= 99):
+  #   print("el número es mayor \n")
+  #   while position >= 99:
+  #     result = position - 99
+  #     print(result)
+  #     break
+      
+
+
+  # elif (position < 0):
+  #   print("es menor \n")
+  #   while position < 0:
+  #     result  = position + 99 
 
 
 
-  # for i in movements :
-    
-  #   i = int(i)
-  #   print(sum(i))
-
-
-  # for element in movements:
-
-  #   element = int(element)
-
-  #   result = position + element
-
-
-
-    # if(element >= 0):
-    #   print("positive \n")
-
-    # elif(element <= 0):
-    #   print("negative \n")
-
-  return  position
-
-
+  # return result
 
 if __name__ == "__main__":
   # Code written here or in other files will be ignored by the automated tests.
