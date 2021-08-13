@@ -1,61 +1,18 @@
-def final_value(movements = []):
+def final_value(movements = [50, 49, -4]):
   # Your solution
-  noMoves = 0
-
-  while noMoves <= 1:
-
-    data = input("write the movements: \n ")
-
-    movements.append(data)
-    noMoves += 1
-
-  print("The position is: ", safe(movements))
-
-
-def safe(movements):
 
 # Debería llegar de 0-99 (total 10 números)
 
-  position = 0
+  data = sum(movements)
 
-  for element in movements:
+  if data >= 0:
+    convertData = (((abs(data//100)*100)-data) *-1)
 
-    element = int(element)
+  else:
+    convertData = ((abs(data//100)*100)+data)
 
-    position += element
-    # print(position)
+  return print("The number is: ", convertData)
 
-
-  result(position)
-
-
-  # return result
-
-def result(position):
-
-
-  # while position > 99:
-  #   result = position - 99
-  #   print(result, position)
-
-      
-  # if (position >= 99):
-  #   print("el número es mayor \n")
-  #   while position >= 99:
-  #     result = position - 99
-  #     print(result)
-  #     break
-      
-
-
-  # elif (position < 0):
-  #   print("es menor \n")
-  #   while position < 0:
-  #     result  = position + 99 
-
-
-
-  # return result
 
 if __name__ == "__main__":
   # Code written here or in other files will be ignored by the automated tests.
