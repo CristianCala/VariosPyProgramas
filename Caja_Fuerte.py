@@ -1,8 +1,6 @@
 def final_value(movements = [50, 49, -4]):
   # Your solution
 
-# Debería llegar de 0-99 (total 10 números)
-
   data = sum(movements)
 
   if data >= 0:
