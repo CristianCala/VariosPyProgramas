@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Programa que calcula la función cuadrática y lineal y las grafica.
 
-@autor: Andrea
+@Autor: Cristian Cala
 """
 
 import matplotlib.pyplot as plt
