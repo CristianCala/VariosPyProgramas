@@ -16,7 +16,7 @@ for c in texto:
     else:
 
         dato_cifrado += c
-        
+
 print("Texto:",texto)
 
 print("Texto Encriptado:",dato_cifrado)
